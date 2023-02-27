@@ -1,9 +1,17 @@
 <h1>{{title}}</h1>
-<form>
-   <input type="text" placeholder="Enter Name" name="name">
-   <input type="password" placeholder="Enter Password" name="password">
-   <button>login</button>
-</form>
+<h1 appRedEl>{{title}}</h1>v
+<!-- reactive forms /validation-->
+<!-- <h1>{{title}}</h1> -->
+<!-- <form [formGroup]="loginform" (ngSubmit)="loginUser()">
+   <input type="text" placeholder="Enter Name" name="name" formControlName="user"><br><br>
+   <span style="color:red;" *ngIf="user && user.invalid && user.touched"   >This field is not valid</span> 
+   <br><br>
+   <input type="password" placeholder="Enter Password" name="password" formControlName="password">
+   <span style="color:red;" *ngIf="password&& password.invalid && password.touched"   >This field is not valid</span> 
+   <br><br>
+   <button [disabled]="loginform.invalid"  >Login</button>
+
+</form> -->
 <!-- Template Driven Forms
 <form #loginform="ngForm" (ngSubmit)="userLogin(loginform.value)">
    <input type="text " placeholder="Enter Name" name="name" ngModel>

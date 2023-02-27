@@ -7,11 +7,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatBadgeModule} from '@angular/material/badge';
 import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 // import { LoginComponent } from './login/login.component';
 // import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { RedElDirective } from './red-el.directive';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,7 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     ChildComponent,
     UserDetailsComponent,
     UsdInrPipe,
+    RedElDirective,
     // LoginComponent,
     // HeaderComponent,
   ],
@@ -29,6 +33,8 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     MatButtonModule,
     MatBadgeModule,
     FormsModule,
+    ReactiveFormsModule
+    
     ],
   providers: [],
   bootstrap: [AppComponent]
